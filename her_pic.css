@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFDFDF;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-item {
+    width: 25%; /* Four items in a row for desktop */
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%; /* Ensure all images have the same width */
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Maintain aspect ratio and crop if needed */
+}
+
+@media (max-width: 768px) {
+    /* Two items in a row for mobile */
+    .image-item {
+        width: 50%;
+    }
+}

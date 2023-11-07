@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Pyidaungsu';
+    src: url(fonts/Pyidaungsu.ttf);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FCF5ED;
+}
+
+.notes-container {
+    border-radius: 10%;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.note {
+    border-radius: 2%;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    background-color: #FFFBF5;
+    margin: 10px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.2s;
+}
+
+.note:hover {
+    transform: scale(1.05);
+}
+
+.note-title {
+    font-family: 'Pyidaungsu';
+    background-color: #F4BF96;
+    color: #fff;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.note-body {
+    font-family: 'Pyidaungsu';
+    font-size: 14px;
+    padding: 10px;
+}
+
+.note-popup {
+    font-family: 'Pyidaungsu';
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #D2E3C8;
+    width: 300px;
+    max-height: 70vh; /* Add a maximum height and allow scrolling if the content exceeds it */
+    overflow: auto;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.popup-title {
+    font-weight: bold;
+}
+
+.popup-body {
+    margin-top: 10px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    color: red;
+}
