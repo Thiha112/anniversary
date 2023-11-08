@@ -3,78 +3,35 @@
     src: url(fonts/WorkSans.ttf);
 }
 
-body{ 
+body {
+    background-image: url(img/bg.gif);
     background-color: #ffa1f5;
 }
 
-/* .item{
-    border: 1px solid black;
-} */
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 50% 50%;
-    height: 100vh; /* Adjust this for desired height */
-    width: 100%;
-}
-
-.item1, .item2 {
-    grid-row: span 2;
-}
-
-.us{
-    position: relative;
-    right: 90%;
-    bottom: 12%;
-    width: 270%;
-    height:100%;
-}
-
-.item2_holder {
-    position: relative;
+.maindiv {
     background-color: #dffed8;
-    border-radius: 9%;
-    border: 1px solid #dffed8;
-    margin-top: 10%;
-    margin-left: 12%;
-    width: 80%;
-    height: 90%;
-    transition: transform 0.3s ease-in-out; /* Add a transition for all properties over 0.5 seconds */
-}
-
-.item2_holder:hover {
-    transform: scale(1.1); /* Add a scale transform when hovered */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow when hovered */
-}
-
-.items_holder {
-    position: relative;
-    background-color: #dffed8;
-    border-radius: 12%;
-    border: 1px solid #dffed8;
-    margin-top: 10%;
-    margin-left: 15%;
-    width: 70%;
-    height: 80%;
-    transition: transform 0.3s ease-in-out; /* Add a transition for all properties over 0.5 seconds */
-}
-
-.items_holder:hover {
-    transform: scale(1.1); /* Add a scale transform when hovered */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow when hovered */
-}
-
-
-.lovecounter{
     position: absolute;
-    margin-left: 7%;
-    margin-top: 10%;
-    width:90%;
-    height:40%;
+    border-radius: 10%;
+    width: 440px;
+    height: 400px;
+    margin-left: 47.5%;
+    margin-top: 11%;
 }
 
-#main_text{
+.lovecounter {
+    position: absolute;
+    margin-left: 16%;
+    width: 70%;
+    height: 55%;
+}
+
+.counteritem {
+    margin-left: 15%;
+    margin-top: 50%;
+    font-size: large;
+}
+
+#main_text {
     position: absolute;
     font-family: 'WorkSans';
     font-weight: bolder;
@@ -83,74 +40,40 @@ body{
     text-align: center;
 }
 
-.counteritem{
-    margin-top: 100%;
-}
-
-.arrow{
-    position: absolute;
-    width:30%;
-    height:10%;
-    margin-left: 35%;
-    bottom: 15%;
-}
-
-.couplepic{
-    position: absolute;
-    margin-top: 10%;
-    width:100%;
-    height:50%;
-}
-
-.otheritem1{
-    position: absolute;
-    margin-top: 62%;
-}
-
-.loveletter{
-    position: absolute;
-    margin-top: 10%;
-    width:100%;
-    height:50%;
-}
-
-.otheritem2{
-    position: absolute;
-    margin-top: 70%;
-    margin-left: 8%;
-}
-
-.otheritem3{
-    position: absolute;
-    margin-top: 70%;
-    margin-left: 25%;
-}
-
-.specialday{
-    position: absolute;
-    margin-top: 10%;
-    width:100%;
-    height:50%;
-}
-
-.playlist{
-    position: absolute;
-    margin-top: 10%;
-    width:100%;
-    height:50%;
-}
-
-/* For devices with a width of 360px, height of 740px, and DPR of 4 (Samsung Galaxy S9) */
-@media screen and (width: 360px) and (height: 740px) and (-webkit-device-pixel-ratio: 4) {
-    .grid-container {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 25% 25% 25% 25%;
-        height: 100vh; /* Adjust this for desired height */
-        width: 100%;
+@media screen and (max-width: 360px) {
+    body {
+        background-image: url("img/ph_bg.gif");
     }
-    
-    .item1, .item2 {
-        grid-row: span 2;
+
+    .maindiv {
+        background-color: #dffed8;
+        position: absolute;
+        border-radius: 10%;
+        width: 200px;
+        height: 200px;
+        margin-left: 22.5%;
+        margin-top: 125%;
     }
+
+    .lovecounter {
+        position: absolute;
+        margin-left: 13%;
+        width: 80%;
+        height: 60%;
+    }
+
+    .counteritem {
+        margin-left: 4%;
+        margin-top: 65%;
+    }
+
+    #main_text {
+        position: absolute;
+        font-family: 'WorkSans';
+        font-weight: bolder;
+        font-size: 20px;
+        color: #5272F2;
+        text-align: center;
+    }
+
 }
