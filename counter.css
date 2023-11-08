@@ -28,3 +28,14 @@ body {
 #timer b {
     margin: 0 5px;
 }
+
+@media screen and (max-width: 360px) {
+    #together {
+        font-size: 27px;
+    }
+
+    #timer {
+        font-size: 22px;
+        margin-top: 30px;
+    }
+}
