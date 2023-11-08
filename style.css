@@ -26,16 +26,17 @@ body {
 }
 
 .counteritem {
-    margin-left: 15%;
-    margin-top: 50%;
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 55%;
     font-size: large;
 }
 
 #main_text {
     position: absolute;
     font-family: 'WorkSans';
-    font-weight: bolder;
-    font-size: xx-large;
+    font-weight: bold;
+    font-size: 40px;
     color: #5272F2;
     text-align: center;
 }
@@ -63,7 +64,7 @@ body {
     }
 
     .counteritem {
-        margin-left: 4%;
+        margin-left: 24%;
         margin-top: 65%;
     }
 
