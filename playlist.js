@@ -6,10 +6,20 @@ let currentVideoIndex = 0;
 
 // Initialize the YouTube player
 function initializeYouTubePlayer() {
+    const container = document.querySelector('.video-frame');
+    const maxAspectRatio = 0.5625; // Maximum aspect ratio
+
+    const width = container.offsetWidth;
+    const height = width * maxAspectRatio;
+
     const player = new YT.Player("player", {
-        height: "315",
-        width: "560",
+        height: height,
+        width: "100%", // Set width to 100%
         videoId: videoIds[currentVideoIndex],
+        playerVars: {
+            controls: 1,
+            modestbranding: 1,
+        },
         events: {
             onReady: onPlayerReady,
         },
