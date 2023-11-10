@@ -1,27 +1,28 @@
-# Anniversary Website
+# Our Love Anniversary Counter
 
 ![Anniversary Website](img/final.gif)
 
 ## Overview
 
-This is the source code repository for the Anniversary Website. The website is designed to celebrate special occasions and includes various pages for a delightful experience.
+This is the source code repository for the Anniversary Surprise Website, a heartfelt gift for my girlfriend. The website is designed to celebrate our special moments and includes various pages for a romantic experience.
 
 ## Pages
 
-1. **Home:** The main landing page with a welcome message.
-2. **Playlist:** A page featuring a curated playlist with love songs.
-3. **Poem:** A page dedicated to a special love poem.
-4. **Gallery:** A collection of memorable photos and moments.
-5. **Video Messages:** Personalized video messages from loved ones.
+1. **Home:** The main landing page with a warm welcome.
+2. **Been Love Counter:** A special counter showcasing the time we've spent together.
+3. **Couple Pictures:** A gallery featuring pictures of us.
+4. **Love Letters:** A collection of heartfelt letters expressing my love for her.
+5. **Special Days:** A section highlighting significant dates and memories.
+6. **Our Playlist:** A curated playlist of our favorite love songs.
 
 ## Accessibility
 
-The Anniversary Website is designed with accessibility in mind to ensure a positive experience for all users. Key accessibility features include:
+The Anniversary Surprise Website is designed with accessibility in mind to ensure a positive experience for all users. Key accessibility features include:
 
 - **Responsive Design:** The website adapts to different screen sizes, ensuring a seamless experience on various devices.
 - **Keyboard Navigation:** Users can navigate through the site using keyboard controls.
 - **Alt Text for Images:** All images include descriptive alt text for users with visual impairments.
 - **Color Contrast:** High contrast is maintained for text and background colors to improve readability.
 
-Feel free to explore the repository and use the code for your own special occasions!
+Feel free to explore the repository and use the code to create your own personalized surprise!
 
