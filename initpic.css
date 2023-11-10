@@ -34,7 +34,9 @@ body {
 @media screen and (max-width: 360px) {
     .grid-container {
         grid-template-columns: 1fr;
-        overflow-x: hidden;
-        overflow-y: auto;
+        margin-top: 100%;
+        /* Add top margin to create space below the header */
+        overflow-x: auto;
+        /* Allow horizontal scrolling */
     }
 }
