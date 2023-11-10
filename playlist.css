@@ -10,7 +10,10 @@ body {
 }
 
 .video-frame {
-    width: 560px;
+    width: 100%;
+    /* Make the video frame responsive */
+    max-width: 560px;
+    /* Set a maximum width for larger screens */
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -42,4 +45,11 @@ p {
     color: #777;
     text-align: center;
     margin-top: 20px;
+}
+
+@media screen and (max-width: 360px) {
+    .video-frame {
+        max-width: 100%;
+        /* Adjust the maximum width for smaller screens */
+    }
 }
