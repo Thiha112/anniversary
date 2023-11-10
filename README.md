@@ -1,6 +1,6 @@
 # Anniversary Website
 
-![Anniversary Website]("img/final.gif")
+![Anniversary Website](img/final.gif)
 
 ## Overview
 
